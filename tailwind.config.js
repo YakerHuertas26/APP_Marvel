@@ -10,7 +10,8 @@ export default {
         'poppins':['poppins', 'Open Sans']
       },
       screens:{
-        'movil':'300px'
+        'movil':'300px',
+        'tablet':'700px'
       }
     },
   },

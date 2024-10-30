@@ -1,12 +1,9 @@
 import { RoutesComponent } from "./Routes/Ruotes";
+
+
 const App=() => {
-
-
-
   return (
-   
       <RoutesComponent/>
-  
   )
 }
 

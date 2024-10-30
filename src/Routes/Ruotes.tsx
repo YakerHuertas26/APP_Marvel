@@ -3,13 +3,12 @@ import Home from "../Components/Home";
 import { Details } from "../Components/Details";
 
 const RoutesComponent = ():JSX.Element => {
-    // importar el endpoint de la api
-    const endpoint= import.meta.env.VITE_ENDPOINT_API;
+  
 
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home endpoint={endpoint}/>}/>
+                <Route path="/" element={<Home/>}/>
 
                 <Route path="/Details/:id" element={<Details/>}/>
             </Routes>
