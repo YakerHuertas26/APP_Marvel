@@ -1,15 +1,12 @@
-import Home from "./Components/Home";
-
-
+import { RoutesComponent } from "./Routes/Ruotes";
 const App=() => {
-// importar el endpoint de la api
-const endpoint= import.meta.env.VITE_ENDPOINT_API; 
+
+
 
   return (
-    <div className="font-poppins">
-      <Home endpoint={endpoint} />
-
-    </div>
+   
+      <RoutesComponent/>
+  
   )
 }
 

@@ -7,7 +7,10 @@ export default {
   theme: {
     extend: {
       fontFamily:{
-        poppins:['poppins', 'Open Sans']
+        'poppins':['poppins', 'Open Sans']
+      },
+      screens:{
+        'movil':'300px'
       }
     },
   },
