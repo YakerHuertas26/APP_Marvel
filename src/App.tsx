@@ -1,11 +1,15 @@
+import Home from "./Components/Home";
 
-import './App.css'
 
-function App() {
-
+const App=() => {
+// importar el endpoint de la api
+const endpoint= import.meta.env.VITE_ENDPOINT_API; 
 
   return (
-    <div>Hola </div>
+    <div className="font-poppins">
+      <Home endpoint={endpoint} />
+
+    </div>
   )
 }
 
