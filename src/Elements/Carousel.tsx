@@ -1,7 +1,7 @@
 import md5 from "md5";
 import { useEffect } from "react";
 import { useStoreApp } from "../Store/Store";
-
+import avatar from '../assets/black-widow.png';
 // tipar mis datos Item
 interface Movie{
     name: string;
@@ -56,18 +56,34 @@ const Carousel = () => {
         }
     }
 
-    
-
     // Treaer la data
     useEffect(()=>{
         PetitionApi(); 
     },[])
-
+  
+    const listaData:any= lista;
     return ( 
         lista?
-        <div className="  p-1" >
-            <p>nombre</p>
-        </div>
+        <>  <div className="rounded-md pt-3">
+                <img className=" h-full w-auto   opacity-70   rounded-md" 
+                src={listaData[0].thumbnail} alt="fondo" />
+            </div>
+            
+            <div className="h-full w-full absolute top-0 ">
+                <div className="h-full w-full" style={{
+                    backgroundImage: `url(${avatar})`, // 
+                    backgroundSize: 'cover', // Ajusta el 
+                    backgroundRepeat: 'no-repeat', // Evita 
+                    backgroundPosition: 'top', // Centra 
+                }}>
+                    
+                </div>
+
+            </div>
+            <div className="absolute bg-gradient-to-t from-gray-800 to-transparent h-[30%] w-full bottom-0" ></div>
+        </>
+
+            
         : <p>cargando...</p>
     );
 }

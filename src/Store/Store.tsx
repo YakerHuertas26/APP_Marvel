@@ -2,7 +2,7 @@ import { create } from "zustand";
 
 // defino los tipos 
 interface typeStore {
-    lista: string[] | null,
+    lista: string[] |null,
     setLista:(p:string[]) => void;
 }
 
